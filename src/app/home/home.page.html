@@ -1,14 +1,66 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+  <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+          <ion-menu-button autoHide="false"></ion-menu-button>
+        </ion-buttons>
+        <img src="assets/imgs/epan_blanco.png" style="padding-top: 10px;" width="20%" alt="">
+        <ion-buttons slot="end">
+            <ion-button routerLink="/menu/cart">
+              <ion-icon src="assets/carrito.svg" slot="start"></ion-icon>
+            </ion-button>
+          </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+    <ion-card>
+        <img src="assets/imgs/fondo_app.png"/>
+      </ion-card>
+      <ion-card color="dark">
+        <ion-card-content>
+          <ion-card-title class="big-title titulo prod">
+            Productos recientes
+          </ion-card-title>
+          <ion-grid>
+            <ion-row>
+              <ion-col class="centerr">
+                <img class="radius" src="assets/imgs/marraquetas.jpg"/>
+                <ion-label class="center" stacked>
+                  <h2 class="top">Marraquetas</h2>
+                  <h2 class="reds">$1,750 / KG</h2>
+                </ion-label>
+                <ion-button class="botonp" expand="block" routerLink="/menu/marraquetas" routerDirection="root">Ir al Producto</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+    
+        </ion-card-content>
+    
+      </ion-card>
+         
+      <ion-card color="dark">
+          <ion-card-title style="margin-top: 10px; margin-bottom: 10px;" class="big-title titulo prod">
+              Zonas de entrega
+          </ion-card-title>
+
+          <img class="radius" src="assets/imgs/mapa15.png"/>
+  
+      </ion-card>
+
+      <ion-card color="dark">
+    
+        <ion-card-content>
+    
+          <ion-card-title class="big-title">
+            Accede a tu cuenta
+          </ion-card-title>
+    
+          <p class="icuenta">ingresa a tu cuenta y consigue ofertas especiales</p>
+    
+          <ion-button class="botonp" block routerLink="/menu/login">Acceder</ion-button>
+    
+        </ion-card-content>
+    
+      </ion-card>
+      
 </ion-content>

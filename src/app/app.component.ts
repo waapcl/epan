@@ -19,8 +19,9 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
+      this.statusBar.overlaysWebView(false);
       this.splashScreen.hide();
+      this.statusBar.backgroundColorByHexString('#000000');
     });
   }
 }

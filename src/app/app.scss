@@ -4,3 +4,29 @@
 // styles are for the entire app and not just one component. Additionally, this 
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
+
+@font-face {
+    font-family: 'Gobold Uplow';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../assets/fonts/Gobold_Uplow.ttf');
+  }
+  @font-face {
+    font-family: 'Champagne & Limousines';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../assets/fonts/Champagne_Limousines_Bold.ttf');
+  }
+  .tituloo {
+    font-family: 'Gobold Uplow',sans-serif;
+
+}
+.botonp{
+  text-align: center;
+  --color: #000 !important;
+  font-weight: bold;
+  margin-top: 10px;    
+  font-family: 'Champagne & Limousines';
+  --background: #cfa03a !important;
+
+}

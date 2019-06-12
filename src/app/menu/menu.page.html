@@ -1,0 +1,63 @@
+<ion-menu color="dark" contentId="content">
+
+  <ion-header>
+  <ion-toolbar color="dark">
+    <img src="assets/imgs/epan_blanco.png" style="padding-top: 15px; padding-left: 15px;" width="25%" alt="">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color= "dark">
+    <div color="dark">
+        <!-- Standard Menu Item -->
+        <ion-menu-toggle color="dark">
+          <ion-item  color="dark" [routerLink]="['/menu/home']" routerDirection="root" routerLinkActive="active">
+            <ion-icon src="../../assets/home.svg" slot="start"></ion-icon>
+            <ion-label class="menuu"> Home</ion-label>
+          </ion-item>
+         
+          <ion-item color="dark" [routerLink]="['/menu/productos']" routerDirection="root" routerLinkActive="active">
+            <ion-icon src="../../assets/productos.svg" slot="start"></ion-icon>
+            <ion-label class="menuu">Productos</ion-label>
+          </ion-item>
+          <ion-item color="dark" [routerLink]="['/menu/cart']" routerDirection="root" routerLinkActive="active">
+            <ion-icon src="../../assets/carrito.svg" slot="start"></ion-icon>
+            <ion-label class="menuu">Carrito</ion-label>
+          </ion-item>
+          <ion-item color="dark" [routerLink]="['/menu/checkout']" routerDirection="root" routerLinkActive="active">
+            <ion-icon src="../../assets/check.svg" slot="start"></ion-icon>
+            <ion-label class="menuu">Pagar</ion-label>
+          </ion-item>
+          <ion-item color="dark" [routerLink]="['/menu/login']" routerDirection="root" routerLinkActive="active">
+            <ion-icon src="../../assets/loginb.svg" slot="start"></ion-icon>
+            <ion-label class="menuu">Acceder</ion-label>
+          </ion-item>
+      
+        </ion-menu-toggle>
+        <!-- Item with Children -->
+  
+      </div>
+</ion-content>
+<ion-footer color="dark">
+    <ion-item color="dark">
+      </ion-item>
+    <ion-item color="dark">
+    <ion-label class="menuu">Contacto</ion-label>
+  </ion-item>
+  <ion-item color="dark">
+  <ion-label class="menuu"><a class="emaill" href="mailto:contacto@epan.cl">contacto@epan.cl</a></ion-label>
+  </ion-item>
+    <ion-item color="dark">
+      <ion-item color="dark" href="https://api.whatsapp.com/send?phone=56997770460&text=Hola,%20tengo%20una%20consulta">
+        <ion-icon src="../../assets/whatsapp.svg"></ion-icon>
+      </ion-item>
+    <ion-item color="dark" href="https://instagram.com/epandelivery">
+      <ion-icon src="../../assets/instagram.svg"></ion-icon> 
+    </ion-item>
+    <ion-item href="https://facebook.com/epandeliveryy" color="dark">
+      <img src="../../assets/facebook-logo.png">
+      </ion-item>
+    </ion-item>
+
+</ion-footer>
+</ion-menu>
+<ion-router-outlet id="content" main></ion-router-outlet>

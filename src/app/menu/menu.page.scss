@@ -1,0 +1,44 @@
+
+.active {
+    --ion-text-color: var(--ion-color-primary);
+ 
+    ion-icon {
+        --ion-text-color-rgb: var(--ion-color-primary);
+    }
+}
+ .hola {
+     background-color: #000;
+ }
+.parent-active {
+    font-weight: 500;
+}
+ 
+.sub-item {
+    padding-left: 20px;
+    font-size: small;
+}
+.instagram{
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.facebook{
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.face {
+    width: 60px;
+}
+
+.insta {
+    width: 60px;
+}
+.menuu {
+    font-family: 'Gobold Uplow',sans-serif;
+    font-size: 12px;
+}
+.emaill {
+    text-decoration: none;
+    color: #fff;
+}

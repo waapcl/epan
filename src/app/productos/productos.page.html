@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title class="tituloo">Productos</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="menu/home"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <iframe style="border: 0px;" width="100%" height="100%" src="https://epan.cl/productos"></iframe>
+
+</ion-content>
+<ion-footer>
+    <ion-toolbar>
+        <ion-button [routerLink]="['/menu/cart']" class="botonp">
+            Ir al carrito 
+            <ion-icon name="arrow-forward"></ion-icon>  
+        </ion-button>
+  
+    </ion-toolbar>
+  </ion-footer>
